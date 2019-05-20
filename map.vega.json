@@ -1,0 +1,406 @@
+{
+  "config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/us-10m.json",
+    "format": {"feature": "states", "type": "topojson"}
+  },
+  "mark": "geoshape",
+  "encoding": {"color": {"type": "quantitative", "field": "accidents"}},
+  "projection": {"type": "albersUsa"},
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {"name": "data-d6400e2c90051f135ad2ab30550e2a7f"},
+        "key": "id",
+        "fields": ["accidents"]
+      }
+    }
+  ],
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.2.1.json",
+  "datasets": {
+    "data-d6400e2c90051f135ad2ab30550e2a7f": [
+      {
+        "state": "AK",
+        "accidents": 5370,
+        "id": 2,
+        "code": "AK",
+        "name": "Alaska"
+      },
+      {
+        "state": "CO",
+        "accidents": 2578,
+        "id": 8,
+        "code": "CO",
+        "name": "Colorado"
+      },
+      {
+        "state": "TX",
+        "accidents": 5513,
+        "id": 48,
+        "code": "TX",
+        "name": "Texas"
+      },
+      {
+        "state": "CA",
+        "accidents": 8513,
+        "id": 6,
+        "code": "CA",
+        "name": "California"
+      },
+      {
+        "state": "WI",
+        "accidents": 1487,
+        "id": 55,
+        "code": "WI",
+        "name": "Wisconsin"
+      },
+      {
+        "state": "HI",
+        "accidents": 471,
+        "id": 15,
+        "code": "HI",
+        "name": "Hawaii"
+      },
+      {
+        "state": "NC",
+        "accidents": 1543,
+        "id": 37,
+        "code": "NC",
+        "name": "North Carolina"
+      },
+      {
+        "state": "MO",
+        "accidents": 1493,
+        "id": 29,
+        "code": "MO",
+        "name": "Missouri"
+      },
+      {
+        "state": "LA",
+        "accidents": 1141,
+        "id": 22,
+        "code": "LA",
+        "name": "Louisiana"
+      },
+      {
+        "state": "NE",
+        "accidents": 683,
+        "id": 31,
+        "code": "NE",
+        "name": "Nebraska"
+      },
+      {
+        "state": "KS",
+        "accidents": 1050,
+        "id": 20,
+        "code": "KS",
+        "name": "Kansas"
+      },
+      {
+        "state": "SD",
+        "accidents": 424,
+        "id": 46,
+        "code": "SD",
+        "name": "South Dakota"
+      },
+      {
+        "state": "ME",
+        "accidents": 481,
+        "id": 23,
+        "code": "ME",
+        "name": "Maine"
+      },
+      {
+        "state": "NY",
+        "accidents": 1834,
+        "id": 36,
+        "code": "NY",
+        "name": "New York"
+      },
+      {
+        "state": "OH",
+        "accidents": 1729,
+        "id": 39,
+        "code": "OH",
+        "name": "Ohio"
+      },
+      {
+        "state": "CT",
+        "accidents": 480,
+        "id": 9,
+        "code": "CT",
+        "name": "Connecticut"
+      },
+      {
+        "state": "TN",
+        "accidents": 1020,
+        "id": 47,
+        "code": "TN",
+        "name": "Tennessee"
+      },
+      {
+        "state": "NM",
+        "accidents": 1307,
+        "id": 35,
+        "code": "NM",
+        "name": "New Mexico"
+      },
+      {
+        "state": "VA",
+        "accidents": 1207,
+        "id": 51,
+        "code": "VA",
+        "name": "Virginia"
+      },
+      {
+        "state": "SC",
+        "accidents": 906,
+        "id": 45,
+        "code": "SC",
+        "name": "South Carolina"
+      },
+      {
+        "state": "AR",
+        "accidents": 1453,
+        "id": 5,
+        "code": "AR",
+        "name": "Arkansas"
+      },
+      {
+        "state": "WY",
+        "accidents": 704,
+        "id": 56,
+        "code": "WY",
+        "name": "Wyoming"
+      },
+      {
+        "state": "WV",
+        "accidents": 381,
+        "id": 54,
+        "code": "WV",
+        "name": "West Virginia"
+      },
+      {
+        "state": "DE",
+        "accidents": 109,
+        "id": 10,
+        "code": "DE",
+        "name": "Delaware"
+      },
+      {
+        "state": "PR",
+        "accidents": 104,
+        "id": 72,
+        "code": "PR",
+        "name": "Puerto Rico"
+      },
+      {
+        "state": "MH",
+        "accidents": 1,
+        "id": 68,
+        "code": "MH",
+        "name": "Marshall Islands"
+      },
+      {
+        "state": "RI",
+        "accidents": 155,
+        "id": 44,
+        "code": "RI",
+        "name": "Rhode Island"
+      },
+      {
+        "state": "DC",
+        "accidents": 43,
+        "id": 11,
+        "code": "DC",
+        "name": "District of Columbia"
+      },
+      {
+        "state": "MI",
+        "accidents": 1949,
+        "id": 26,
+        "code": "MI",
+        "name": "Michigan"
+      },
+      {
+        "state": "NV",
+        "accidents": 1161,
+        "id": 32,
+        "code": "NV",
+        "name": "Nevada"
+      },
+      {
+        "state": "MN",
+        "accidents": 1386,
+        "id": 27,
+        "code": "MN",
+        "name": "Minnesota"
+      },
+      {
+        "state": "MS",
+        "accidents": 777,
+        "id": 28,
+        "code": "MS",
+        "name": "Mississippi"
+      },
+      {
+        "state": "WA",
+        "accidents": 2493,
+        "id": 53,
+        "code": "WA",
+        "name": "Washington"
+      },
+      {
+        "state": "IN",
+        "accidents": 1247,
+        "id": 18,
+        "code": "IN",
+        "name": "Indiana"
+      },
+      {
+        "state": "ID",
+        "accidents": 1323,
+        "id": 16,
+        "code": "ID",
+        "name": "Idaho"
+      },
+      {
+        "state": "AZ",
+        "accidents": 2684,
+        "id": 4,
+        "code": "AZ",
+        "name": "Arizona"
+      },
+      {
+        "state": "PA",
+        "accidents": 1683,
+        "id": 42,
+        "code": "PA",
+        "name": "Pennsylvania"
+      },
+      {
+        "state": "MT",
+        "accidents": 988,
+        "id": 30,
+        "code": "MT",
+        "name": "Montana"
+      },
+      {
+        "state": "IL",
+        "accidents": 1979,
+        "id": 17,
+        "code": "IL",
+        "name": "Illinois"
+      },
+      {
+        "state": "UT",
+        "accidents": 1246,
+        "id": 49,
+        "code": "UT",
+        "name": "Utah"
+      },
+      {
+        "state": "OR",
+        "accidents": 1664,
+        "id": 41,
+        "code": "OR",
+        "name": "Oregon"
+      },
+      {
+        "state": "OK",
+        "accidents": 1174,
+        "id": 40,
+        "code": "OK",
+        "name": "Oklahoma"
+      },
+      {
+        "state": "GA",
+        "accidents": 1889,
+        "id": 13,
+        "code": "GA",
+        "name": "Georgia"
+      },
+      {
+        "state": "FL",
+        "accidents": 5502,
+        "id": 12,
+        "code": "FL",
+        "name": "Florida"
+      },
+      {
+        "state": "KY",
+        "accidents": 611,
+        "id": 21,
+        "code": "KY",
+        "name": "Kentucky"
+      },
+      {
+        "state": "AL",
+        "accidents": 1093,
+        "id": 1,
+        "code": "AL",
+        "name": "Alabama"
+      },
+      {
+        "state": "MA",
+        "accidents": 934,
+        "id": 25,
+        "code": "MA",
+        "name": "Massachusetts"
+      },
+      {"state": "IA", "accidents": 777, "id": 19, "code": "IA", "name": "Iowa"},
+      {
+        "state": "NH",
+        "accidents": 349,
+        "id": 33,
+        "code": "NH",
+        "name": "New Hampshire"
+      },
+      {
+        "state": "ND",
+        "accidents": 538,
+        "id": 38,
+        "code": "ND",
+        "name": "North Dakota"
+      },
+      {
+        "state": "NJ",
+        "accidents": 1129,
+        "id": 34,
+        "code": "NJ",
+        "name": "New Jersey"
+      },
+      {"state": "GU", "accidents": 17, "id": 66, "code": "GU", "name": "Guam"},
+      {
+        "state": "VT",
+        "accidents": 233,
+        "id": 50,
+        "code": "VT",
+        "name": "Vermont"
+      },
+      {
+        "state": "MD",
+        "accidents": 765,
+        "id": 24,
+        "code": "MD",
+        "name": "Maryland"
+      },
+      {
+        "state": "MP",
+        "accidents": 4,
+        "id": 69,
+        "code": "MP",
+        "name": "Northern Mariana Islands"
+      },
+      {
+        "state": "VI",
+        "accidents": 14,
+        "id": 78,
+        "code": "VI",
+        "name": "Virgin Islands of the United States"
+      }
+    ]
+  }
+}

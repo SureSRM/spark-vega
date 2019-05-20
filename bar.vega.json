@@ -1,0 +1,32 @@
+{
+  "config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}},
+  "data": {"name": "data-ea7c0cc6bc52777cdd2341a4bd9ae854"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "type": "ordinal",
+      "field": "phase",
+      "sort": {"field": "died", "order": "descending"}
+    },
+    "y": {"type": "quantitative", "field": "died"}
+  },
+  "height": 500,
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.2.1.json",
+  "datasets": {
+    "data-ea7c0cc6bc52777cdd2341a4bd9ae854": [
+      {"phase": "approach", "died": 5060},
+      {"phase": "taxi", "died": 129},
+      {"phase": "climb", "died": 2161},
+      {"phase": "unknown", "died": 1110},
+      {"phase": "other", "died": 122},
+      {"phase": "takeoff", "died": 6051},
+      {"phase": "maneuvering", "died": 7181},
+      {"phase": "descent", "died": 1405},
+      {"phase": "standing", "died": 248},
+      {"phase": "landing", "died": 706},
+      {"phase": "cruise", "died": 7474},
+      {"phase": "go-around", "died": 866}
+    ]
+  }
+}
